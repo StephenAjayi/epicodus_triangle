@@ -10,7 +10,8 @@ class Triangle
       triangle
     elsif [@side1, @side2, @side3].uniq().length().==(2)
       triangle ="isosceles triangle"
-      triangle
+    elsif [@side1, @side2, @side3].uniq().length().==(3)
+      triangle = "scalene"
     end
   end
 end
