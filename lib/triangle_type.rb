@@ -4,9 +4,12 @@ class Triangle
     @side2 = side2
     @side3 = side3
   end
-  define_method(:equil) do
+  define_method(:tri) do
     if [@side1, @side2, @side3].uniq().length().==(1)
       triangle = "equilateral triangle"
+      triangle
+    elsif [@side1, @side2, @side3].uniq().length().==(2)
+      triangle ="isosceles triangle"
       triangle
     end
   end
